@@ -10,7 +10,8 @@ const {
     deleteReaction
 } = require('../../controller/thoughtController');
 
-router.route('/')
+router
+.route('/')
 .get(getAllThoughts)
 .post(createThought);
 
